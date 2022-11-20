@@ -1,0 +1,22 @@
+{% extends "base.html" %} 
+{% block title %}Pickem{% endblock %} 
+{% block content%}
+
+<ul class="draggable-list" id="draggable-list"></ul>
+
+<script>
+    var GA_list = {{ gA|tojson}};
+    var GB_list = {{ gB|tojson}};
+    var GC_list = {{ gC|tojson}};
+    var GD_list = {{ gD|tojson}};
+    var GE_list = {{ gE|tojson}};
+    var GF_list = {{ gF|tojson}};
+    var GG_list = {{ gG|tojson}};
+    var GH_list = {{ gH|tojson}};
+</script>
+
+<button class="btn btn-light btn-lg btn-block save-btn" onclick="send_info()">Save Group</button>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %} 
+{% block title %}Home{% endblock %} 
+{% block content%}
+
+<div>
+    <h2>{{g1_date}}</h2>
+    {% for game in games1 %}
+    <ul class="list-group list-group-horizontal" id="notes">
+      <li class="list-group-item">Group {{ game.group }}</li>
+      <li class="list-group-item">{{ game.date }}</li>
+      <li class="list-group-item">{{ game.home_name }}</li>
+      <li class="list-group-item">VS</li>
+      <li class="list-group-item">{{ game.away_name }}</li>
+      <li class="list-group-item">BET</li>
+      </li>
+    </ul>
+    {% endfor %}
+
+    {% if games2|length > 0 %}
+    <h3>{{g2_date}}</h3>
+    {% for game in games2 %}
+    <ul class="list-group list-group-horizontal" id="notes">
+      <li class="list-group-item">Group {{ game.group }}</li>
+      <li class="list-group-item">{{ game.date }}</li>
+      <li class="list-group-item">{{ game.home_name }}</li>
+      <li class="list-group-item">VS</li>
+      <li class="list-group-item">{{ game.away_name }}</li>
+      <li class="list-group-item">BET</li>
+      </li>
+    </ul>
+    {% endfor %}
+    {% endif %}
+</div>
+
+{% endblock %}

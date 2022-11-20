@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    background-color: #701B35;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1.world-cup-title {
+    margin: 1em;
+    text-align: center;
+}
+
+h2.group-title{
+    margin: 2em;
+}
+
+ul.draggable-list{
+    padding: 0;
+}
+
+ul.draggable-list li{
+    display: flex;
+    height: 6em;
+    margin: 2em;
+    line-height: 6em;
+}
+
+span.number{
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;;
+    width: 10%;
+    text-align: center;
+    vertical-align: middle;
+
+}
+div.draggable{
+    position: relative;
+    display: flex;
+    width: 90%;
+    border-style: solid;
+    border-width: .2em;
+    border-color: white;
+
+}
+
+p.country-name{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+}
+div.draggable img{
+    position: absolute;
+    right: 0;
+    padding-left: 1em;
+    max-height: 100%;
+}
+
+button.save-btn{
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+nav{
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
